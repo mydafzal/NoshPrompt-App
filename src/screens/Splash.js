@@ -18,7 +18,7 @@ const Splash = ({navigation}) => {
       <View style={{bottom: 40, position: 'absolute'}}>
         <TouchableOpacity
           style={styles.bottomButton}
-          onPress={() => navigation.navigate('DrawerNavigation')}>
+          onPress={() => navigation.navigate('Login')}>
           <Text style={styles.buttonText}>Get Started!</Text>
         </TouchableOpacity>
       </View>

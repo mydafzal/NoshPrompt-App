@@ -30,7 +30,6 @@ const DrawerNavigation = () => {
         name="Home"
         component={Homepage}
       />
-      <Drawer.Screen name="Login" component={Login} />
     </Drawer.Navigator>
   );
 };
