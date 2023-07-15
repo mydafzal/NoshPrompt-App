@@ -18,106 +18,34 @@ const Signup = ({navigation}) => {
         <Text style={styles.text}>Please enter your email and password!</Text>
       </View>
       <View style={{paddingVertical: 50}}>
-        <View
-          style={{
-            flexDirection: 'row',
-            height: 60,
-            backgroundColor: '#F2F2F2',
-            borderRadius: 50,
-            width: 350,
-            alignItems: 'center',
-          }}>
-          <View
-            style={{
-              backgroundColor: 'white',
-              height: 40,
-              width: 40,
-              borderRadius: 50,
-              alignItems: 'center',
-              justifyContent: 'center',
-              left: 20,
-            }}>
+        <View style={styles.inputField}>
+          <View style={styles.inputFieldInner}>
             <Image
               source={require('../icons/images/user.png')}
               style={{height: 20, width: 20}}
             />
           </View>
-          <TextInput
-            style={{
-              height: 55,
-              width: 300,
-              left: 30,
-            }}
-            placeholder="Fullname"
-          />
+          <TextInput style={styles.textInput} placeholder="Fullname" />
         </View>
         <Spacer top={20} />
-        <View
-          style={{
-            flexDirection: 'row',
-            height: 60,
-            backgroundColor: '#F2F2F2',
-            borderRadius: 50,
-            width: 350,
-            alignItems: 'center',
-          }}>
-          <View
-            style={{
-              backgroundColor: 'white',
-              height: 40,
-              width: 40,
-              borderRadius: 50,
-              alignItems: 'center',
-              justifyContent: 'center',
-              left: 20,
-            }}>
+        <View style={styles.inputField}>
+          <View style={styles.inputFieldInner}>
             <Image
               source={require('../icons/images/email.png')}
               style={{height: 20, width: 20}}
             />
           </View>
-          <TextInput
-            style={{
-              height: 55,
-              width: 300,
-              left: 30,
-            }}
-            placeholder="Email"
-          />
+          <TextInput style={styles.textInput} placeholder="Email" />
         </View>
         <Spacer top={20} />
-        <View
-          style={{
-            flexDirection: 'row',
-            height: 60,
-            backgroundColor: '#F2F2F2',
-            borderRadius: 50,
-            width: 350,
-            alignItems: 'center',
-          }}>
-          <View
-            style={{
-              backgroundColor: 'white',
-              height: 40,
-              width: 40,
-              borderRadius: 50,
-              alignItems: 'center',
-              justifyContent: 'center',
-              left: 20,
-            }}>
+        <View style={styles.inputField}>
+          <View style={styles.inputFieldInner}>
             <Image
               source={require('../icons/images/password.png')}
               style={{height: 20, width: 20}}
             />
           </View>
-          <TextInput
-            style={{
-              height: 55,
-              width: 300,
-              left: 30,
-            }}
-            placeholder="Password"
-          />
+          <TextInput style={styles.textInput} placeholder="Password" />
         </View>
       </View>
       <View>
@@ -170,5 +98,27 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
     textAlign: 'center',
+  },
+  inputField: {
+    flexDirection: 'row',
+    height: 60,
+    backgroundColor: '#F2F2F2',
+    borderRadius: 50,
+    width: 350,
+    alignItems: 'center',
+  },
+  inputFieldInner: {
+    backgroundColor: 'white',
+    height: 40,
+    width: 40,
+    borderRadius: 50,
+    alignItems: 'center',
+    justifyContent: 'center',
+    left: 20,
+  },
+  textInput: {
+    height: 55,
+    width: 300,
+    left: 30,
   },
 });

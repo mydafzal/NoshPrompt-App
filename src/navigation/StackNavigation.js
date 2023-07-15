@@ -6,11 +6,12 @@ import Splash from '../screens/Splash';
 import DrawerNavigation from './DrawerNavigation';
 import Login from '../screens/Login';
 import Signup from '../screens/Signup';
+import {navigationRef} from './NavigationRef';
 const Stack = createNativeStackNavigator();
 
 const Navigation = () => {
   return (
-    <NavigationContainer>
+    <NavigationContainer ref={navigationRef}>
       <Stack.Navigator>
         <Stack.Screen
           name="Splash"

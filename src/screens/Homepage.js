@@ -101,7 +101,7 @@ const Homepage = () => {
   return (
     <View style={styles.container}>
       <View style={styles.headingContainer}>
-        <Spacer top={20} />
+        <Spacer top={10} />
         <Text style={styles.welcomeText}>Welcome! Momal ✨ </Text>
         <Spacer top={20} />
         <Text style={styles.text}>We unlock the full potential of AI!</Text>
