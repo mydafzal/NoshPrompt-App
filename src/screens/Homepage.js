@@ -6,6 +6,7 @@ import {
   Modal,
   TextInput,
   StyleSheet,
+  Image,
 } from 'react-native';
 
 const Homepage = () => {
@@ -34,11 +35,11 @@ const Homepage = () => {
     <View
       style={{
         flex: 1,
-        justifyContent: 'center',
+        // justifyContent: 'center',
         alignItems: 'center',
-        padding: 20,
+        padding: 5,
       }}>
-      {text.split('.').map((sentence, index) => {
+      {/* {text.split('.').map((sentence, index) => {
         const words = sentence.trim().split(' ');
         return (
           <View key={index} style={styles.lineContainer}>
@@ -74,7 +75,11 @@ const Homepage = () => {
             <Text style={styles.modalButtonText}>OK</Text>
           </TouchableOpacity>
         </View>
-      </Modal>
+      </Modal> */}
+      <Image
+        source={require('../assets/Homepage.jpg')}
+        style={{width: 400, height: 505}}
+      />
     </View>
   );
 };
