@@ -27,7 +27,7 @@ const DrawerNavigation = () => {
             </Pressable>
           ),
         }}
-        name="Homepage"
+        name="Home"
         component={Homepage}
       />
       <Drawer.Screen name="Login" component={Login} />
